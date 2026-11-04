@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Forlink</title>
+<meta name="description" content="Send a message to the Forlink team.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap nav-wrap">
+  <a class="brand" href="index.html"><img src="logo.png" alt=""><span>Forlink</span></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+  <nav class="site-nav" aria-label="Main">
+    <a href="index.html" data-page="index.html">Home</a>
+    <a href="services.html" data-page="services.html">Services</a>
+    <a href="how-it-works.html" data-page="how-it-works.html">How It Works</a>
+    <a href="about.html" data-page="about.html">About Us</a>
+    <a href="contact.html" data-page="contact.html">Contact</a>
+    <a class="btn btn-outline btn-sm" href="login.php">Log In</a>
+    <a class="btn btn-primary btn-sm" href="get-started.html">Get Started</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="page-hero"><div class="wrap">
+  <p class="eyebrow">Contact</p>
+  <h1>Let’s Create Something Great Together.</h1>
+  <p>Questions, partnerships or project ideas? Send us a message and the Forlink team will get back to you.</p>
+</div></section>
+
+<section class="section">
+  <div class="wrap cols-2">
+    <div class="card" style="padding:2rem">
+      <h2 style="font-size:1.6rem">Send us a message</h2>
+      <div id="contact-status" role="status" aria-live="polite" tabindex="-1"></div>
+      <form id="contact-form" class="form" method="post" action="actions.php" novalidate>
+        <input type="hidden" name="action" value="contact_submit">
+        <input type="hidden" name="csrf" value="">
+        <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <label class="field"><span>Full Name</span><input type="text" name="full_name" required maxlength="100" autocomplete="name"></label>
+        <label class="field"><span>Email Address</span><input type="email" name="email" required maxlength="150" autocomplete="email"></label>
+        <label class="field"><span>Subject</span><input type="text" name="subject" required maxlength="150"></label>
+        <label class="field"><span>Message</span><textarea name="message" rows="6" required minlength="10" maxlength="2000"></textarea></label>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+    <div>
+      <h2 style="font-size:1.6rem">Business inquiries</h2>
+      <ul class="info-list">
+        <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span><strong>Business email</strong><br><a href="mailto:hello@forlink.example">hello@forlink.example</a></span></li>
+        <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg><span><strong>Partnerships and agencies</strong><br>Tell us about your team and how we can work together.</span></li>
+        <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6"/></svg><span><strong>Collaborate with us</strong><br>Video editors and brands are always welcome to join the Forlink community.</span></li>
+      </ul>
+      <p class="muted">Follow Forlink</p>
+      <p><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a> · <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a></p>
+      <p class="form-note">Social links and the email address are placeholders until Forlink’s official accounts are ready. The administrator can update the contact email in System Settings.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div class="footer-grid">
+    <a class="brand" href="index.html"><img src="logo.png" alt=""><span>Forlink</span></a>
+    <nav aria-label="Footer"><a href="index.html">Home</a><a href="services.html">Services</a><a href="how-it-works.html">How It Works</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="login.php">Log In</a></nav>
+  </div>
+  <small>&copy; <span data-year>2026</span> Forlink. One Team. One Goal. Forlink.</small>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

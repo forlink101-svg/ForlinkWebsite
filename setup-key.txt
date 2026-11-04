@@ -1,0 +1,6 @@
+Forlink first-time administrator setup key
+
+9784-3CBC-3D92
+
+Open admin-setup.php, enter this key and create your administrator account.
+This file is deleted automatically once the administrator exists.
